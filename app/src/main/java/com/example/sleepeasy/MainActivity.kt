@@ -19,29 +19,23 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             SleepEasyTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                SleepEasyEntryPoint()
             }
         }
     }
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun SleepEasyEntryPoint() {
     Text(
-        text = "Hello $name!",
-        modifier = modifier
+        text = "Hello!",
     )
 }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    SleepEasyTheme {
-        Greeting("Android")
-    }
-}
+//@Preview(showBackground = true)
+//@Composable
+//fun GreetingPreview() {
+//    SleepEasyTheme {
+//        SleepEasyEntryPoint("Android")
+//    }
+//}
