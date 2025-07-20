@@ -1,4 +1,4 @@
-package com.example.sleepeasy.screens
+package com.example.sleepeasy.ui
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Button

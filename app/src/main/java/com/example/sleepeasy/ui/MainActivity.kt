@@ -1,4 +1,4 @@
-package com.example.sleepeasy
+package com.example.sleepeasy.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
