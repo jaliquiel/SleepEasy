@@ -52,7 +52,8 @@ dependencies {
     implementation(Dependecies.uiToolingPreview)
     implementation(Dependecies.material3)
     implementation(Dependecies.hiltAndroid)
-    kapt(Dependecies.hiltCompiler)
+    implementation(Dependecies.hiltNavigationCompose)
+    implementation(Dependecies.navigationCompose)
     kapt(Dependecies.hiltAndroidCompiler)
     testImplementation(Dependecies.junit)
     androidTestImplementation(Dependecies.androidxJunit)
@@ -61,6 +62,7 @@ dependencies {
     androidTestImplementation(Dependecies.uiTestJunit4)
     debugImplementation(Dependecies.uiTooling)
     debugImplementation(Dependecies.uiTestManifest)
+    implementation(Dependecies.serializationJson)
 }
 
 kapt {

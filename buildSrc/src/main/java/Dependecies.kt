@@ -15,7 +15,9 @@ object Dependecies {
     val androidxJunit by lazy { "androidx.test.ext:junit:${Version.junitVersion}" }
     val espressoCore by lazy { "androidx.test.espresso:espresso-core:${Version.espressoCore}" }
     val hiltAndroid by lazy { "com.google.dagger:hilt-android:${Version.hilt}" }
-    val hiltCompiler by lazy { "com.google.dagger:hilt-compiler:${Version.hilt}" }
     val hiltAndroidCompiler by lazy { "com.google.dagger:hilt-android-compiler:${Version.hilt}" }
+    val hiltNavigationCompose by lazy { "androidx.hilt:hilt-navigation-compose:${Version.hiltNavigationCompose}" }
+    val serializationJson by lazy { "org.jetbrains.kotlinx:kotlinx-serialization-json:${Version.serializationJson}" }
+    val navigationCompose by lazy { "androidx.navigation:navigation-compose:${Version.navigationCompose}" }
 
 }
