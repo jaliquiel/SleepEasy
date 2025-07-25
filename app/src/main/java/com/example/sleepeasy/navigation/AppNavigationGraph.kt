@@ -22,7 +22,11 @@ fun AppNavigationGraph() {
             }
         }
         composable<SleepFormScreenDestination> {
-            SleepFormScreen()
+            SleepFormScreen(
+                popStackCallback = {
+                    navController.popBackStack()
+                }
+            )
         }
     }
 }

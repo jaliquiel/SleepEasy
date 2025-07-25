@@ -33,6 +33,7 @@ import androidx.compose.material.icons.filled.ArrowBack
 @Composable
 fun SleepFormScreen(
     sleepHubViewModel: SleepFormViewModel = hiltViewModel(),
+    popStackCallback : () -> Unit = { /* No-op by default */ },
     // TODO: handle callbacks and navigation
 ) {
     Scaffold(
@@ -43,7 +44,7 @@ fun SleepFormScreen(
             TopAppBar(
                 title = { Text("Record Sleeping Time") },
                 navigationIcon = {
-                    IconButton(onClick = { /* Back pressed */ }) {
+                    IconButton(onClick = { popStackCallback() }) {
                         Icon(Icons.Filled.ArrowBack, contentDescription = "Back")
                     }
                 }
@@ -61,7 +62,7 @@ fun SleepFormScreen(
                     Text("Submit")
                 }
                 Button(onClick = {
-                    //TODO: handle click
+                    popStackCallback()
                 }, modifier = Modifier.weight(1f).padding(start = 8.dp)) {
                     Text("Cancel")
                 }
